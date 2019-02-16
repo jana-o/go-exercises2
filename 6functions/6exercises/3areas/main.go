@@ -21,6 +21,7 @@ func (c circle) area() float64 {
 
 func (s square) area() float64 {
 	return s.length * s.length
+	//return math.Pow(s.length, 2)
 }
 
 //create a type SHAPE that defines an interface as anything that has the AREA method
