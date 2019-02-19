@@ -1,0 +1,17 @@
+Remember to BET
+
+BenchmarkCat(b *testing.B)
+ExampleCat()
+TestCat(t *testing.T)
+
+COMMANDS
+godoc -http=:8080
+
+go test
+go test -bench .
+go test -cover
+go test -coverprofile c.out
+go tool cover -html=c.out
+
+//len of string is number of bytes
+//go test -coverprofile c.out => create c.out file

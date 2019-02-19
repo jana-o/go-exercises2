@@ -1,0 +1,31 @@
+//go doc fmt => higher level overview
+//godoc fmt
+//godoc + copy path -> see doc
+
+//run godoc locally: in terminal run godoc
+// -http=:8080
+
+//===godoc.org
+//take the github url and paste into godoc -> go doc creates documentation
+
+//efficient compilation
+//efficient execution
+//ease of programming => ease of writing documentation
+//well thought out
+//provide comments above code
+
+//package errors -> good example
+//first word = name of function
+//New returns.. => will become documentation
+//func New() error {...}
+
+//doc.go file for package documentation
+//e.g. package fmt
+// in doc.go write comments
+// /*
+// all comments
+// */
+// package fmt (no space above)
+
+//golang blog
+//end of comment

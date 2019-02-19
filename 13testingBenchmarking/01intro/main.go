@@ -1,0 +1,12 @@
+package main
+
+import (
+	"exercises2/13testingBenchmarking/01intro/math"
+	"fmt"
+)
+
+func main() {
+	xs := []float64{1, 2, 3, 4}
+	avg := math.Average(xs)
+	fmt.Println(avg)
+}
