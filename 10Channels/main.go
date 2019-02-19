@@ -13,7 +13,8 @@ func main() {
 }
 
 //channels BLOCK!
-//code does not work bec nothing to start c <-42
+//code does not work bec nothing to start c <-
+//send and receive have to happen at the same time => Staffel
 func notWorking() {
 	c := make(chan int)
 	c <- 42

@@ -13,6 +13,7 @@ import (
 
 func main() {
 	var wg sync.WaitGroup
+
 	incrementer := 0
 	//go routines
 	gs := 50

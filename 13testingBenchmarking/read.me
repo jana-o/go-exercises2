@@ -13,5 +13,16 @@ go test -cover
 go test -coverprofile c.out
 go tool cover -html=c.out
 
+godoc -http=:8080
+// see local host documentation/packages
+
 //len of string is number of bytes
 //go test -coverprofile c.out => create c.out file
+
+
+func BenchmarkCount(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		Count(quote.SunAlso)
+	}
+
+}
