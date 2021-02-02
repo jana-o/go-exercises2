@@ -6,13 +6,13 @@ func main() {
 	//switch bool
 	switch {
 	case false:
-		fmt.Println("should not print")
+		fmt.Println("should not print false")
 	case (3 == 3):
 		fmt.Println("should print 1")
 		fallthrough
 		//next case also gets printed with fall through
 	case (4 == 3):
-		fmt.Println("should not print")
+		fmt.Println("should not print but does bc of fallthrough")
 		fallthrough
 	case (4 == 4):
 		fmt.Println("should print 2")
@@ -20,8 +20,6 @@ func main() {
 	default:
 		fmt.Println("this is default")
 	}
-
-	switchValue()
 }
 
 func switchValue() {

@@ -4,6 +4,8 @@ import (
 	"fmt"
 )
 
+//select lets you wait on multiple channel operation
+
 func main() {
 	even := make(chan int)
 	odd := make(chan int)

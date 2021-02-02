@@ -18,4 +18,17 @@ func main() {
 
 	cr = c
 	cs = c
+
+	message()
 }
+
+func message() {
+	message := make(chan string)
+
+	go func() {
+		message <- "ping"
+	}()
+
+	msg := <-message
+	fmt.Println(msg)
+} //ping

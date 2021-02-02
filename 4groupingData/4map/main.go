@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+	// create an empty map: make(map[key-type]val-type)
 	m := map[string]int{
 		"James":           32,
 		"Miss Moneypenny": 27,
@@ -46,4 +47,17 @@ func main() {
 	}
 
 	fmt.Println(m)
+
+	findElement(moons)
+}
+
+var moons = map[string]int{"Mercury": 0, "Venus": 0, "Earth": 1, "Mars": 2, "Jupiter": 67}
+
+func findElement(mo map[string]int) {
+
+	n, found := moons["Earth"]
+	fmt.Println("Earth:", n, "Found:", found)
+
+	n, found = moons["Neptune"]
+	fmt.Println("Neptune:", n, "Found:", found)
 }

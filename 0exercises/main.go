@@ -3,12 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	helloName()
+	// helloName()
 
 	// fmt.Println("/// user name ///")
 	// helloUser()
 
-	// inputRemainder()
+	inputRemainder()
 
 	// fmt.Println("/// only even numbers ///")
 	// onlyEven()

@@ -17,7 +17,7 @@ func xscope() {
 	if x == 42 {
 		fmt.Println("001")
 	}
-	//here it workds because var declared outised => scope here
+	//here it workds because var declared outside => scope here
 	fmt.Println(x)
 
 }

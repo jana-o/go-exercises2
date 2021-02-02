@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+//Pointer stores the memory address of another value located in computer memory
+//A pointer references a location in memory (obtaining the value stores at that location is dereferencing)
+
 func main() {
 	a := 42
 	fmt.Println(a)
@@ -26,3 +29,7 @@ func main() {
 	//you only pass address around and not entire data
 	//or if you de-reference value => change data ata location
 }
+
+//go has garbage collection
+//Some built-in types, like maps and channels, are boxed
+//(i.e. internally they are pointers to mutable structures), and are initialized using the make function
